@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <NewsFeedsUISDK/NewsFeedsUISDK.h>
-
+#import <Keys/NewsFeedsUIDemoKeys.h>
 #import "RootViewController.h"
 #import "WXApi.h"
 #import "WholeViewController.h"
@@ -22,8 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [NewsFeedsUISDK startWithAppKey:@"3c11d60d903e49d5a47ad2a58bb0db97" appSecret:@"ca5137e40b874abd893e762f1d53d839" config:nil];
+    NewsFeedsUIDemoKeys *keys = [[NewsFeedsUIDemoKeys alloc] init];
+
+    [NewsFeedsUISDK startWithAppKey:keys.newsFeedsKey appSecret:keys.newsFeedsSecret config:nil];
     
     [NewsFeedsUISDK configWith:nil];
     
