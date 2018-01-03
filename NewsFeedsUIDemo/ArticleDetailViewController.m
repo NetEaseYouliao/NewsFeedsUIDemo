@@ -70,12 +70,16 @@
 }
 
 - (void)articleDidLoadContent:(NFArticleDetailView *)detailView extraData:(id)extraData {
-    if (![[NewsFeedsSDK sharedInstance] hasRead:self.newsInfo.infoId]) {
-        [[NewsFeedsSDK sharedInstance] markRead:self.newsInfo.infoId];
-        if ([_delegate respondsToSelector:@selector(markRead)]) {
-            [_delegate markRead];
+    __weak typeof(self)weakSelf = self;
+
+    [[NewsFeedsSDK sharedInstance] hasRead:self.newsInfo.infoId block:^(BOOL hasRead) {
+        if (!hasRead) {
+            [[NewsFeedsSDK sharedInstance] markRead:weakSelf.newsInfo.infoId];
+            if ([weakSelf.delegate respondsToSelector:@selector(markRead)]) {
+                [weakSelf.delegate markRead];
+            }
         }
-    }
+    }];
 }
 
 - (void)onIssueReport:(NFArticleDetailView *)detailView issueDesc:(NSString *)issueDescription extraData:(id)extraData {
@@ -85,6 +89,13 @@
 - (void)onIssueReportFinished:(NFArticleDetailView *)detailView extraData:(id)extraData {
     
 }
+
+//- (void)onWebShareClick:(NFArticleDetailView *)detailView
+//                   newsDetail:(NFNewsDetail *)detail
+//                   type:(NSInteger)type
+//              extraData:(id)extraData {
+//
+//}
 
 - (void)back:(NFArticleGalleryViewController *)browserController extraData:(id)extraData {
     [browserController dismissViewControllerAnimated:YES completion:nil];

@@ -4,6 +4,10 @@
 <dict>
 	<key>method</key>
 	<string>development</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.netease.erciyuan</key>
+		<string>heartouch2017</string>
+	</dict>
 </dict>
 </plist>
-

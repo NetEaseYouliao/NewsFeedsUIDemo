@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06CAF9C21FC6A26800E94F55 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06CAF9BF1FC6A26800E94F55 /* README.txt */; };
+		06CAF9C51FC6A27F00E94F55 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CAF9C41FC6A27F00E94F55 /* libWeChatSDK.a */; };
+		06CAFA6E1FCD554F00E94F55 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CAFA611FCD554E00E94F55 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		06CAFA6F1FCD554F00E94F55 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CAFA631FCD554E00E94F55 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		06CAFA701FCD554F00E94F55 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CAFA641FCD554E00E94F55 /* WXMediaMessage+messageConstruct.m */; };
+		06CAFA711FCD554F00E94F55 /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CAFA691FCD554F00E94F55 /* WXApiResponseHandler.m */; };
+		06CAFA721FCD554F00E94F55 /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CAFA6A1FCD554F00E94F55 /* WXApiRequestHandler.m */; };
+		06CAFA731FCD554F00E94F55 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CAFA6D1FCD554F00E94F55 /* WXApiManager.m */; };
 		1A044B5D1F94898D00EC026B /* IPA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A044B5C1F94898D00EC026B /* IPA.plist */; };
-		1A0936991F9734C9003E97D0 /* NFBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A0936981F9734C9003E97D0 /* NFBundle.bundle */; };
 		1A09369B1F973B8F003E97D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A09369A1F973B8F003E97D0 /* Security.framework */; };
-		1A0CF0201F9894F3006D320F /* NewsFeedsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0CF01F1F9894F3006D320F /* NewsFeedsSDK.framework */; };
-		1A0CF0221F989514006D320F /* NewsFeedsUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0CF0211F989514006D320F /* NewsFeedsUISDK.framework */; };
-		1A20738F1F8F939E00F8A354 /* NFUIBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A20738E1F8F939E00F8A354 /* NFUIBundle.bundle */; };
 		1A23E4381F909DA6008F209D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A23E4371F909DA6008F209D /* RootViewController.m */; };
 		1A23E43B1F90A2D5008F209D /* SeperateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A23E43A1F90A2D5008F209D /* SeperateViewController.m */; };
 		1A23E43E1F90A399008F209D /* ArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A23E43D1F90A399008F209D /* ArticleDetailViewController.m */; };
@@ -34,7 +38,7 @@
 		1A90D54E1F8DECAE00F3CBAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A90D54C1F8DECAE00F3CBAF /* LaunchScreen.storyboard */; };
 		1A90D5591F8DECAE00F3CBAF /* NewsFeedsUIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90D5581F8DECAE00F3CBAF /* NewsFeedsUIDemoTests.m */; };
 		1A90D5641F8DECAE00F3CBAF /* NewsFeedsUIDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A90D5631F8DECAE00F3CBAF /* NewsFeedsUIDemoUITests.m */; };
-		FABDB8C0B082933397343935 /* libPods-NewsFeedsUIDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F8192557FFD89EDD371051 /* libPods-NewsFeedsUIDemo.a */; };
+		95E58839F1D037D5333FEFEF /* Pods_NewsFeedsUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9168142A8303F3A7438202 /* Pods_NewsFeedsUIDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +60,26 @@
 
 /* Begin PBXFileReference section */
 		05DF9B4CFA7FC16DC37FD2A8 /* Pods-NewsFeedsUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeedsUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsFeedsUIDemo/Pods-NewsFeedsUIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		06CAF9BD1FC6A26800E94F55 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		06CAF9BE1FC6A26800E94F55 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		06CAF9BF1FC6A26800E94F55 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		06CAF9C01FC6A26800E94F55 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		06CAF9C41FC6A27F00E94F55 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = NewsFeedsUIDemo/Vendors/WXSDK/libWeChatSDK.a; sourceTree = "<group>"; };
+		06CAFA611FCD554E00E94F55 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		06CAFA621FCD554E00E94F55 /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		06CAFA631FCD554E00E94F55 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		06CAFA641FCD554E00E94F55 /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		06CAFA651FCD554E00E94F55 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		06CAFA661FCD554E00E94F55 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		06CAFA681FCD554F00E94F55 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		06CAFA691FCD554F00E94F55 /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiResponseHandler.m; sourceTree = "<group>"; };
+		06CAFA6A1FCD554F00E94F55 /* WXApiRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiRequestHandler.m; sourceTree = "<group>"; };
+		06CAFA6B1FCD554F00E94F55 /* WXApiRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiRequestHandler.h; sourceTree = "<group>"; };
+		06CAFA6C1FCD554F00E94F55 /* WXApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiResponseHandler.h; sourceTree = "<group>"; };
+		06CAFA6D1FCD554F00E94F55 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
 		089DE002795E5D5EC0DEB096 /* Pods-NewsFeedsUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeedsUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsFeedsUIDemo/Pods-NewsFeedsUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1A044B5C1F94898D00EC026B /* IPA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IPA.plist; sourceTree = "<group>"; };
-		1A0936981F9734C9003E97D0 /* NFBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NFBundle.bundle; sourceTree = "<group>"; };
 		1A09369A1F973B8F003E97D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		1A0CF01F1F9894F3006D320F /* NewsFeedsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NewsFeedsSDK.framework; sourceTree = "<group>"; };
-		1A0CF0211F989514006D320F /* NewsFeedsUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NewsFeedsUISDK.framework; sourceTree = "<group>"; };
-		1A20738E1F8F939E00F8A354 /* NFUIBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NFUIBundle.bundle; sourceTree = "<group>"; };
 		1A23E4361F909DA6008F209D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		1A23E4371F909DA6008F209D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		1A23E4391F90A2D5008F209D /* SeperateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeperateViewController.h; sourceTree = "<group>"; };
@@ -79,6 +96,7 @@
 		1A45ACD91F8DEEE100401D90 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		1A45ACDB1F8DEEE800401D90 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1A45ACDD1F8DEEF100401D90 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1A8576701FC26D7000D3E201 /* NewsFeedsUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewsFeedsUISDK.framework; path = ../NewsFeedsUISDK/Products/NewsFeedsUISDK.framework; sourceTree = "<group>"; };
 		1A90D53B1F8DECAE00F3CBAF /* NewsFeedsUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeedsUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A90D53F1F8DECAE00F3CBAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A90D5411F8DECAE00F3CBAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,7 +113,7 @@
 		1A90D55F1F8DECAE00F3CBAF /* NewsFeedsUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsFeedsUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A90D5631F8DECAE00F3CBAF /* NewsFeedsUIDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFeedsUIDemoUITests.m; sourceTree = "<group>"; };
 		1A90D5651F8DECAE00F3CBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82F8192557FFD89EDD371051 /* libPods-NewsFeedsUIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewsFeedsUIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9168142A8303F3A7438202 /* Pods_NewsFeedsUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFeedsUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +121,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0CF0221F989514006D320F /* NewsFeedsUISDK.framework in Frameworks */,
+				06CAF9C51FC6A27F00E94F55 /* libWeChatSDK.a in Frameworks */,
 				1A09369B1F973B8F003E97D0 /* Security.framework in Frameworks */,
 				1A45ACDE1F8DEEF100401D90 /* libsqlite3.tbd in Frameworks */,
 				1A45ACDC1F8DEEE800401D90 /* AVFoundation.framework in Frameworks */,
-				1A0CF0201F9894F3006D320F /* NewsFeedsSDK.framework in Frameworks */,
 				1A45ACDA1F8DEEE100401D90 /* libc++.tbd in Frameworks */,
 				1A45ACD81F8DEED700401D90 /* libz.tbd in Frameworks */,
 				1A45ACD41F8DEE9F00401D90 /* MobileCoreServices.framework in Frameworks */,
@@ -116,7 +133,7 @@
 				1A45ACCE1F8DEE8600401D90 /* CoreLocation.framework in Frameworks */,
 				1A45ACCC1F8DEE8100401D90 /* UserNotifications.framework in Frameworks */,
 				1A45ACCA1F8DEE7A00401D90 /* AdSupport.framework in Frameworks */,
-				FABDB8C0B082933397343935 /* libPods-NewsFeedsUIDemo.a in Frameworks */,
+				95E58839F1D037D5333FEFEF /* Pods_NewsFeedsUIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +154,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06CAF9BB1FC6A26800E94F55 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				06CAF9BC1FC6A26800E94F55 /* WXSDK */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		06CAF9BC1FC6A26800E94F55 /* WXSDK */ = {
+			isa = PBXGroup;
+			children = (
+				06CAFA671FCD554F00E94F55 /* Control */,
+				06CAFA601FCD554E00E94F55 /* Helper */,
+				06CAF9BD1FC6A26800E94F55 /* WXApi.h */,
+				06CAF9BE1FC6A26800E94F55 /* WXApiObject.h */,
+				06CAF9BF1FC6A26800E94F55 /* README.txt */,
+				06CAF9C01FC6A26800E94F55 /* WechatAuthSDK.h */,
+			);
+			path = WXSDK;
+			sourceTree = "<group>";
+		};
+		06CAFA601FCD554E00E94F55 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				06CAFA611FCD554E00E94F55 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				06CAFA621FCD554E00E94F55 /* WXMediaMessage+messageConstruct.h */,
+				06CAFA631FCD554E00E94F55 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				06CAFA641FCD554E00E94F55 /* WXMediaMessage+messageConstruct.m */,
+				06CAFA651FCD554E00E94F55 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				06CAFA661FCD554E00E94F55 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		06CAFA671FCD554F00E94F55 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				06CAFA681FCD554F00E94F55 /* WXApiManager.h */,
+				06CAFA691FCD554F00E94F55 /* WXApiResponseHandler.m */,
+				06CAFA6A1FCD554F00E94F55 /* WXApiRequestHandler.m */,
+				06CAFA6B1FCD554F00E94F55 /* WXApiRequestHandler.h */,
+				06CAFA6C1FCD554F00E94F55 /* WXApiResponseHandler.h */,
+				06CAFA6D1FCD554F00E94F55 /* WXApiManager.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		17A9D39184F591FB3627D820 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +213,8 @@
 		1A45ACC81F8DEE7A00401D90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06CAF9C41FC6A27F00E94F55 /* libWeChatSDK.a */,
+				1A8576701FC26D7000D3E201 /* NewsFeedsUISDK.framework */,
 				1A09369A1F973B8F003E97D0 /* Security.framework */,
 				1A45ACDD1F8DEEF100401D90 /* libsqlite3.tbd */,
 				1A45ACDB1F8DEEE800401D90 /* AVFoundation.framework */,
@@ -160,7 +226,7 @@
 				1A45ACCD1F8DEE8600401D90 /* CoreLocation.framework */,
 				1A45ACCB1F8DEE8100401D90 /* UserNotifications.framework */,
 				1A45ACC91F8DEE7A00401D90 /* AdSupport.framework */,
-				82F8192557FFD89EDD371051 /* libPods-NewsFeedsUIDemo.a */,
+				DD9168142A8303F3A7438202 /* Pods_NewsFeedsUIDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,10 +234,6 @@
 		1A90D5321F8DECAE00F3CBAF = {
 			isa = PBXGroup;
 			children = (
-				1A0CF0211F989514006D320F /* NewsFeedsUISDK.framework */,
-				1A0CF01F1F9894F3006D320F /* NewsFeedsSDK.framework */,
-				1A20738E1F8F939E00F8A354 /* NFUIBundle.bundle */,
-				1A0936981F9734C9003E97D0 /* NFBundle.bundle */,
 				1A90D53D1F8DECAE00F3CBAF /* NewsFeedsUIDemo */,
 				1A90D5571F8DECAE00F3CBAF /* NewsFeedsUIDemoTests */,
 				1A90D5621F8DECAE00F3CBAF /* NewsFeedsUIDemoUITests */,
@@ -194,6 +256,7 @@
 		1A90D53D1F8DECAE00F3CBAF /* NewsFeedsUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				06CAF9BB1FC6A26800E94F55 /* Vendors */,
 				1A044B5C1F94898D00EC026B /* IPA.plist */,
 				1A90D5411F8DECAE00F3CBAF /* AppDelegate.h */,
 				1A90D5421F8DECAE00F3CBAF /* AppDelegate.m */,
@@ -310,16 +373,18 @@
 				TargetAttributes = {
 					1A90D53A1F8DECAE00F3CBAF = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 643957UUJ9;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 569GNZ5392;
+						ProvisioningStyle = Manual;
 					};
 					1A90D5531F8DECAE00F3CBAF = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SM77JMFHDC;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A90D53A1F8DECAE00F3CBAF;
 					};
 					1A90D55E1F8DECAE00F3CBAF = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SM77JMFHDC;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1A90D53A1F8DECAE00F3CBAF;
 					};
@@ -354,8 +419,7 @@
 				1A044B5D1F94898D00EC026B /* IPA.plist in Resources */,
 				1A90D54B1F8DECAE00F3CBAF /* Assets.xcassets in Resources */,
 				1A90D5491F8DECAE00F3CBAF /* Main.storyboard in Resources */,
-				1A20738F1F8F939E00F8A354 /* NFUIBundle.bundle in Resources */,
-				1A0936991F9734C9003E97D0 /* NFBundle.bundle in Resources */,
+				06CAF9C21FC6A26800E94F55 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,9 +446,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NewsFeedsUIDemo/Pods-NewsFeedsUIDemo-resources.sh",
+				"${PODS_ROOT}/NewsFeedsUISDK/NewsFeedsUISDK/NFUIBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -397,13 +464,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsFeedsUIDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB2AD6A15BBE087EC48B1EC0 /* [CP] Embed Pods Frameworks */ = {
@@ -412,9 +482,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NewsFeedsUIDemo/Pods-NewsFeedsUIDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -428,12 +509,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CAFA721FCD554F00E94F55 /* WXApiRequestHandler.m in Sources */,
 				1A90D5461F8DECAE00F3CBAF /* WholeViewController.m in Sources */,
+				06CAFA6F1FCD554F00E94F55 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
 				1A90D5431F8DECAE00F3CBAF /* AppDelegate.m in Sources */,
 				1A90D5401F8DECAE00F3CBAF /* main.m in Sources */,
+				06CAFA6E1FCD554F00E94F55 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				1A23E43E1F90A399008F209D /* ArticleDetailViewController.m in Sources */,
+				06CAFA701FCD554F00E94F55 /* WXMediaMessage+messageConstruct.m in Sources */,
 				1A23E4381F909DA6008F209D /* RootViewController.m in Sources */,
+				06CAFA731FCD554F00E94F55 /* WXApiManager.m in Sources */,
 				1A23E43B1F90A2D5008F209D /* SeperateViewController.m in Sources */,
+				06CAFA711FCD554F00E94F55 /* WXApiResponseHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,9 +597,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = SM77JMFHDC;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -558,9 +647,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SM77JMFHDC;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -583,26 +674,31 @@
 			baseConfigurationReference = 089DE002795E5D5EC0DEB096 /* Pods-NewsFeedsUIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 643957UUJ9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 569GNZ5392;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/NewsFeedsUISDK/NewsFeedsSDK",
 					"$(PROJECT_DIR)/FLAnimatedImage",
 				);
 				INFOPLIST_FILE = NewsFeedsUIDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewsFeedsUIDemo/Vendors/WXSDK",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NewsFeedsUIDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.erciyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "0b78f68d-8948-47c8-8cf8-438d29e742a0";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Dev";
 			};
 			name = Debug;
 		};
@@ -611,26 +707,31 @@
 			baseConfigurationReference = 05DF9B4CFA7FC16DC37FD2A8 /* Pods-NewsFeedsUIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 643957UUJ9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SM77JMFHDC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/NewsFeedsUISDK/NewsFeedsSDK",
 					"$(PROJECT_DIR)/FLAnimatedImage",
 				);
 				INFOPLIST_FILE = NewsFeedsUIDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewsFeedsUIDemo/Vendors/WXSDK",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.netease.NewsFeedsUIDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.erciyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "9caa3b2f-ca0a-4827-bb57-f62a961c4e52";
+				PROVISIONING_PROFILE_SPECIFIER = heartouch2017;
 			};
 			name = Release;
 		};

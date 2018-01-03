@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import <NewsFeedsSDK/NewsFeedsSDK.h>
+#import <NewsFeedsUISDK/NewsFeedsUISDK.h>
+
 #import "RootViewController.h"
+#import "WXApi.h"
+#import "WholeViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,16 +23,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[NewsFeedsSDK sharedInstance] startWithAppKey:@"3c11d60d903e49d5a47ad2a58bb0db97" appSecret:@"ca5137e40b874abd893e762f1d53d839"];
-    [[NewsFeedsSDK sharedInstance] setLogLevel:NFSDKMaxLogLevelDebug];
-
-    [[NewsFeedsSDK sharedInstance] setCacheEnabled:YES];
+    [NewsFeedsUISDK startWithAppKey:@"3c11d60d903e49d5a47ad2a58bb0db97" appSecret:@"ca5137e40b874abd893e762f1d53d839" config:nil];
+    
+    [NewsFeedsUISDK configWith:nil];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[RootViewController alloc] init]];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[WholeViewController alloc] init]];
     self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
     
+    [WXApi startLogByLevel:WXLogLevelDetail logBlock:^(NSString *log) {
+        NSLog(@"log : %@", log);
+    }];
+    
+    //向微信注册
+    [WXApi registerApp:@"wx46a02c42801af566" enableMTA:YES];
+    
+    //向微信注册支持的文件类型
+    UInt64 typeFlag = MMAPP_SUPPORT_TEXT | MMAPP_SUPPORT_PICTURE | MMAPP_SUPPORT_LOCATION | MMAPP_SUPPORT_VIDEO |MMAPP_SUPPORT_AUDIO | MMAPP_SUPPORT_WEBPAGE | MMAPP_SUPPORT_DOC | MMAPP_SUPPORT_DOCX | MMAPP_SUPPORT_PPT | MMAPP_SUPPORT_PPTX | MMAPP_SUPPORT_XLS | MMAPP_SUPPORT_XLSX | MMAPP_SUPPORT_PDF;
+    
+    [WXApi registerAppSupportContentFlag:typeFlag];
     return YES;
 }
 
@@ -60,5 +74,17 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
+- (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0, 0, 32, 32);
+    
+    UIGraphicsBeginImageContextWithOptions(rect.size, false, 1.0);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
 @end

@@ -30,10 +30,18 @@
     
     UIButton *seperateButton = [[UIButton alloc] initWithFrame:CGRectMake(108, 400 , 150, 50)];
     [self.view addSubview:seperateButton];
-    [seperateButton setTitle:@"View分割" forState:UIControlStateNormal];
+    [seperateButton setTitle:@"View拆分" forState:UIControlStateNormal];
     [seperateButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     seperateButton.backgroundColor = [UIColor grayColor];
     [seperateButton addTarget:self action:@selector(seperateButtonClick) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor  colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIColor whiteColor], NSForegroundColorAttributeName, [UIFont fontWithName:@"PingFangSC-Medium" size:19], NSFontAttributeName, nil]];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 }
 
 - (void)didReceiveMemoryWarning {

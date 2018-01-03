@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NewsFeedsUISDK/NewsFeedsUISDK.h>
 
 @interface SeperateViewController : UIViewController
 

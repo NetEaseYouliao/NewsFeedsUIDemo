@@ -1,9 +1,12 @@
 platform :ios, '9.0'
 
+use_frameworks!
+inhibit_all_warnings!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/NetEaseYouliao/Specs.git'
+
 target :NewsFeedsUIDemo do
-  pod 'UITableView+FDTemplateLayoutCell', '~> 1.4'
-  pod 'ReactiveCocoa', '~>2.1.8'
-  pod 'Masonry'
-  pod 'SDWebImage/WebP'
-  pod 'SDWebImage/GIF'
+  pod 'NewsFeedsSDK'
+  pod 'NewsFeedsUISDK'
 end
